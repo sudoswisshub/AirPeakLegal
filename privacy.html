@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - AirPeak Switzerland</title>
+  <meta name="description" content="Privacy Policy for AirPeak Switzerland. Discover how your health, allergy, and location data stay private and secure on your device.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="privacy.html" class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+          </svg>
+        </div>
+        <span>AirPeak Switzerland</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        Your Data Belongs To You
+      </div>
+      <h1 class="hero-title">Privacy Policy</h1>
+      <p class="hero-subtitle">AirPeak Switzerland is designed with privacy at its core. Your allergy triggers, health logs, and location data stay on your device.</p>
+    </section>
+
+    <div class="content-card">
+      <div class="section-block">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+          1. Privacy Philosophy: Nothing Leaves Your Phone
+        </h2>
+        <p>AirPeak Switzerland is built to empower allergy sufferers and outdoor athletes with real-time Swiss pollen and air quality insights without sacrificing personal privacy. We believe health data should remain confidential and secure.</p>
+        <div class="highlight-box">
+          <p><strong>Core Guarantee:</strong> AirPeak Switzerland does not maintain external analytics servers, user tracking databases, or cloud profile databases. Your personal data is never sold, shared, or harvested for advertising.</p>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          2. Information Processed On-Device
+        </h2>
+        <p>To provide personalized respiratory risk scores and station recommendations, AirPeak Switzerland handles the following data on your device:</p>
+        <ul>
+          <li><strong>Location Data:</strong> When enabled, your device’s GPS coordinates are used exclusively on your device to pinpoint the nearest MeteoSwiss pollen monitoring station and NABEL air quality monitoring station. Coordinates are not sent to any central AirPeak server.</li>
+          <li><strong>Allergy & Trigger Profile:</strong> Selected pollen allergens (e.g. Birch, Grass, Alder, Hazel), personal sensitivity level, and custom score weightings are stored in local iOS storage (<code>UserDefaults</code> / <code>SwiftData</code>).</li>
+          <li><strong>Symptom Diary & Health Logs:</strong> Logged symptom severity ratings, notes, and medication usage stay on your device or in your personal private iCloud backup if enabled.</li>
+        </ul>
+      </div>
+
+      <div class="section-block">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          3. Swiss Federal & External Data Services
+        </h2>
+        <p>AirPeak Switzerland retrieves public environmental measurement feeds directly from official Swiss federal infrastructure endpoints:</p>
+        <ul>
+          <li><strong>MeteoSwiss STAC API:</strong> Hourly automatic pollen counts.</li>
+          <li><strong>FOEN / BAFU NABEL:</strong> Official air quality measurements (Ozone, NO₂, PM10, PM2.5).</li>
+          <li><strong>Swisstopo API:</strong> Elevation mapping for relief and station profiling.</li>
+          <li><strong>SBB Timetable API:</strong> Deep linking for public transport relief planning.</li>
+        </ul>
+        <p>Requests to these public APIs contain standard network HTTP requests but carry no personal profile, identity token, or user health data.</p>
+      </div>
+
+      <div class="section-block">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+          </svg>
+          4. Analytics, Notifications & Advertising
+        </h2>
+        <p>AirPeak Switzerland contains zero third-party advertising SDKs, zero cross-site trackers, and zero telemetry frameworks. Push notifications and Widget updates are scheduled locally on your iOS device.</p>
+      </div>
+
+      <div class="section-block">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          5. Data Ownership, Export & Deletion
+        </h2>
+        <p>You maintain 100% control over your data. Through the app’s <em>Settings &gt; Data Export</em> screen, you can export your symptom log history to JSON/CSV at any time or clear stored app data instantly. Uninstalling the app completely removes all locally stored data.</p>
+      </div>
+
+      <div class="section-block">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          6. Contact & Inquiries
+        </h2>
+        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data, please contact us directly:</p>
+
+        <div class="contact-card">
+          <div class="contact-info">
+            <h3>Privacy Support Contact</h3>
+            <p>Email: <strong>alice.turcanu91@gmail.com</strong></p>
+          </div>
+          <a href="mailto:alice.turcanu91@gmail.com?subject=AirPeak%20Switzerland%20Privacy%20Inquiry" class="contact-btn">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Send Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p>&copy; 2026 AirPeak Switzerland. Built with privacy by design. Data provided by MeteoSwiss, FOEN/BAFU, and Swisstopo.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
