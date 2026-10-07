@@ -14,16 +14,24 @@
 
   <header>
     <div class="nav-container">
-      <a href="privacy.html" class="brand">
+      <a href="index.html" class="brand">
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3L2 19h20L12 3z"/>
+            <path d="M12 9v6M9 12h6"/>
           </svg>
         </div>
         <span>AirPeak Switzerland</span>
       </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
           <li><a href="privacy.html" class="active">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
           <li><a href="support.html">Support</a></li>
@@ -35,10 +43,11 @@
   <main>
     <section class="hero-section">
       <div class="badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="M12 8v6M9 11h6"/>
         </svg>
-        Your Data Belongs To You
+        Swiss On-Device Privacy Guarantee
       </div>
       <h1 class="hero-title">Privacy Policy</h1>
       <p class="hero-subtitle">AirPeak Switzerland is designed with privacy at its core. Your allergy triggers, health logs, and location data stay on your device.</p>
@@ -155,5 +164,14 @@
     </div>
   </footer>
 
+  <script>
+    const toggleBtn = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (toggleBtn && navLinks) {
+      toggleBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+  </script>
 </body>
 </html>
