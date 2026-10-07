@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirPeak Switzerland - Official Legal & Support Hub</title>
+  <meta name="description" content="Official documentation, Privacy Policy, Terms of Service, and Support Center for AirPeak Switzerland iOS App.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3L2 19h20L12 3z"/>
+            <path d="M12 9v6M9 12h6"/>
+          </svg>
+        </div>
+        <span>AirPeak Switzerland</span>
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3L2 19h20L12 3z"/>
+          <path d="M12 9v6M9 12h6"/>
+        </svg>
+        Swiss Environmental & Health Intelligence
+      </div>
+      <h1 class="hero-title">AirPeak Switzerland Documentation</h1>
+      <p class="hero-subtitle">Official legal policies, privacy guarantees, terms of service, and user support resources for AirPeak Switzerland.</p>
+    </section>
+
+    <div class="cards-grid">
+      <a href="privacy.html" class="nav-card">
+        <div class="nav-card-icon">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <h3>Privacy Policy</h3>
+        <p>Discover how your health logs, allergen triggers, and location coordinates stay 100% private on your device with zero cloud tracking.</p>
+        <div class="nav-card-link">
+          Read Privacy Policy
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+      </a>
+
+      <a href="terms.html" class="nav-card">
+        <div class="nav-card-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+        </div>
+        <h3>Terms of Service</h3>
+        <p>Read our user agreement, medical disclaimers, and open government data licensing terms for MeteoSwiss, FOEN, and Swisstopo data.</p>
+        <div class="nav-card-link">
+          Read Terms of Service
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+      </a>
+
+      <a href="support.html" class="nav-card">
+        <div class="nav-card-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+        </div>
+        <h3>Support Center</h3>
+        <p>Find answers to frequently asked questions, widget setup guides, troubleshooting steps, and direct contact options.</p>
+        <div class="nav-card-link">
+          Get Support
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p>&copy; 2026 AirPeak Switzerland. Built with privacy by design. Data provided by MeteoSwiss, FOEN/BAFU, and Swisstopo.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (toggleBtn && navLinks) {
+      toggleBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>
